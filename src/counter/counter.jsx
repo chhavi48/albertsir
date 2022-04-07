@@ -13,8 +13,8 @@ import React from "react"
      <p>lets start to see magic</p>
      <h2>counter</h2>
      <h2>{counter}</h2>
-     <button onClick={() => handleIncrement(1)} >ADD</button>
-     <button onClick={() => handleIncrement(-1)} >REMOVE</button>
+     <button onClick={() => handleIncrement(2)} >ADD</button>
+     <button onClick={() => handleIncrement(-2)} >REMOVE</button>
   </>
   );
 }
