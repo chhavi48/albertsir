@@ -17,16 +17,28 @@ function Task()
         let newTask = [...tasks,payload]
         setTasks(newTask)
     }
-    console.log(tasks)
 
+    console.log(tasks)
+ const handleremove = () =>{
+     
+        const payload ={
+
+            title:query,
+            status:false
+
+        }
+        let newTask = [...tasks,payload]
+        setTasks(newTask)
+    }
     
     return (
      <div>
          <h1>Tasks</h1>
      
      <div>
-       <input value={query} onChange={handleChange} placeholder='ad something'/>
+       <input value={query} onChange={handleChange} placeholder='add something'/>
     <button onClick={handleAdd}>ADD</button>
+     <button onClick={handleremove}>Remove</button>
      </div>
      <div>
          {tasks.map(item =>{
