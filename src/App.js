@@ -1,12 +1,24 @@
-import React from "react";
+// import React from "react";
 //  import Counter from './counter/counter'
-import { Task } from "./input/Task";
-
+// import { Task } from "./input/Task";
+import {List} from "./components/list/List";
+// import "./styles.css";
 export default function  App(){
   return (
-    <div className="App">
+    <div  style ={{backgroundColor: 'teal'}}className="App">
       {/* <Counter/> */}
-      <Task/>
+      {/* <Task/> */}
+      <List/>
     </div>
+    // <div className="main_div">
+    // <div className="center_main">
+    //   <br/>
+    //   <input type="text" placeholder="addd a items"/>
+    //   <button>+</button>
+    //   <ol>
+    //     <li></li>
+    //   </ol>
+    // </div>
+    // </div>
   );
 }
