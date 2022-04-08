@@ -28,6 +28,9 @@ function List(){
        <button onClick={handleadd}>ADD</button>
    </div>
    <div>
+       {list.length>0 && `count is${list.length}`}
+   </div>
+   <div>
    {list.map((item)=>
     {
 //    (<div key={item.id}>{item.title}</div>
